@@ -50,6 +50,7 @@ void setup() {
 
 
 void loop() {
+  int oldPos = 90;   
   // CAPTURAR A DISTANCIA //
   digitalWrite(PIN_TRIG, HIGH);
   delayMicroseconds(10);
@@ -65,6 +66,10 @@ void loop() {
     pos = 90; 
   }
 
-  myservo.write(pos);
+  if (pos != oldPos){
+    myservo.write(pos);
+    oldPos = pos;
+  }
+  
   delay(1000);
 }
