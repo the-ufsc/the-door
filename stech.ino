@@ -14,7 +14,7 @@ int distanceOpen = 0;
 
 const char* ssid = "Wokwi-GUEST";
 const char* password = "";
-const String url = "https://raw.githubusercontent.com/the-ufsc/the-door/main/data.json";
+const String url = "https://raw.githubusercontent.com/the-ufsc/the-door/main/distance.txt";
 
 void setup() {
   Serial.begin(115200);
